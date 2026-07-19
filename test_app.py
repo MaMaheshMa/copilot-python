@@ -1,5 +1,5 @@
 # use pytest
-from app import add
+from app import add, subtract, multiply
 
 
 def test_add():
@@ -7,12 +7,12 @@ def test_add():
 	assert add(-1, 1) == 0
 	
 def test_subtract():
-    assert add(5, -2) == 3
-    assert add(-3, -4) == -7
+    assert subtract(5, -2) == 3
+    assert subtract(-3, -4) == -7
 	
 def test_multiply():
-    assert add(2, 3) == 6
-    assert add(-1, 1) == -1 
+    assert multiply(2, 3) == 6
+    assert multiply(-1, 1) == -1
 
 
 # add main function
